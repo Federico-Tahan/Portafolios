@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+body{
+    font-family:"Poppins Sans", sans-serif;
+
+}
+
+#navLogo{
+ transition: transform 0.3s ease;
+ margin-left: 40px;
+}
+
+#navLogo:hover{
+    transform: scale(1.2);
+}
+
+.navbar .navbar-nav .nav-link {
+    color:white !important;
+    transition: transform 0.3s ease;
+    font-family: "Poppins Sans", sans-serif;
+
+}
+.navbar .navbar-nav .nav-link:hover {
+    transform: scale(1.2);
+
+}
+
+.navItems{
+    margin-right: 40px;
+    font-size: 19px;
+}
+
+.homeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: white;
+}
+
+.contentHome{
+    font-family: "Poppins Sans", sans-serif;
+    text-align: center;
+    z-index: 1;
+}
+
+#HometextPresentation{
+    font-size: 40px;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+#HometextNombre{
+    
+    font-size: 70px;
+    font-weight:bold;
+    z-index: 1;
+}
+
+#HometextTitulo{
+    font-size: 45px;
+
+}
+
+
+#gif{
+    height: 80vh;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    filter: blur(5px);
+}
+#gif2{
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+#fotoAboutme{
+    width: 400px;
+    height: 400px;
+}
+
+.AboutMeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#divImage{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ImagenFede{
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 200px; 
+    height: 200px;
+    border-radius: 51%;
+    overflow: hidden;
+}
+
+
+#divBorde{
+    width: 205px; 
+    height: 205px;
+    background-color: rgb(10, 129, 168);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+#divPresentacion{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+}
+
+#divPresentacion p{
+    width: 90vh;
+    font-size: 20px;
+    font-family:"Poppins Sans", sans-serif;
+}
+
+
+#divHabilidades{
+    margin-top: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#divCardsHabilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#titHabi{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#titProyectos{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+}
+.cardHabilidades{
+
+ transition: transform 0.3s ease;
+ margin-top: 5%;
+ margin-right: 5%;
+ margin-bottom: 3%;
+ height: 11rem;
+ width: 12rem;;
+ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.cardHabilidades:hover{
+
+    transform: scale(1.05);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); 
+
+}
+
+
+
+.divContacto{
+    justify-content: center;
+    align-items: center;
+    display: flex ;
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+
+.labelscontact{
+    font-size: 20px;
+}
+
+.cartContact{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); 
+
+}
+
+.imgContact{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.imgContact:hover{
+    transform: scale(1.05);
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); 
+
+}
+
+.imgTecnologyModal{
+    width: 60px;
+    height: 60px;
+    border-radius: 51%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.imgTecnologyModal:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3)
+
+}
+
+.divContTecnologiasModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
