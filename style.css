@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
+body{
+    font-family:"Poppins Sans", sans-serif;
+
+}
+
+#navLogo{
+ transition: transform 0.3s ease;
+ margin-left: 40px;
+}
+
+#navLogo:hover{
+    transform: scale(1.2);
+}
+
+.navbar .navbar-nav .nav-link {
+    color:white !important;
+    transition: transform 0.3s ease;
+    font-family: "Poppins Sans", sans-serif;
+
+}
+.navbar .navbar-nav .nav-link:hover {
+    transform: scale(1.2);
+
+}
+
+.navItems{
+    margin-right: 40px;
+    font-size: 19px;
+}
+
+.homeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: white;
+}
+
+.contentHome{
+    font-family: "Poppins Sans", sans-serif;
+    text-align: center;
+    z-index: 1;
+}
+
+#HometextPresentation{
+    font-size: 40px;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+#HometextNombre{
+    
+    font-size: 70px;
+    font-weight:bold;
+    z-index: 1;
+}
+
+#HometextTitulo{
+    font-size: 45px;
+
+}
+
+
+#gif{
+    height: 82vh;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    filter: blur(5px);
+}
+#gif2{
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+
+#fotoAboutme{
+    width: 400px;
+    height: 400px;
+}
+
+.AboutMeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#sobremi{
+    margin-top: 6%;
+}
+
+
+#buttonCv {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #87CEEB;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+  }
+  
+#buttonCv:hover {
+    background-color: #6495ED;
+}
+
+#divImage{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ImagenFede{
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    border: 5px solid #87CEEB;
+}
+
+
+#divPresentacion{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#divPresentacion p{
+    width: 90vh;
+    font-size: 20px;
+    font-family:"Poppins Sans", sans-serif;
+}
+
+
+#divHabilidades{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#divCardsHabilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#titHabi{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+#titProyectos{
+    z-index: 1;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+}
+.cardHabilidades{
+
+ transition: transform 0.3s ease;
+ margin-top: 5%;
+ margin-right: 5%;
+ margin-bottom: 3%;
+ height: 11rem;
+ width: 12rem;;
+ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.cardHabilidades:hover{
+
+    transform: scale(1.05);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); 
+
+}
+
+
+
+.divContacto{
+    justify-content: center;
+    align-items: center;
+    display: flex ;
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+
+.labelscontact{
+    font-size: 20px;
+}
+
+.cartContact{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8); 
+
+}
+
+.imgContact{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.imgContact:hover{
+    transform: scale(1.05);
+}
+
+.imgTecnologyModal{
+    width: 60px;
+    height: 60px;
+    border-radius: 51%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.imgTecnologyModal:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3)
+
+}
+
+.divContTecnologiasModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#proyect {
+    background-image: url('/Imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-bottom: 4%;
+  }
+  
+  #proyect h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    padding-top: 4%;
+  }
+
+  
+
+  .cardvioleta:hover{
+    box-shadow: 0px 0px 5px rgba(150, 0, 255, 0.5);
+  }
+
+  .cardMorado:hover{
+    box-shadow: 0px 0px 5px purple;
+  }
+
+  .cardNaranja:hover{
+    box-shadow: 0px 0px 5px orange;
+  }
+  .cardceleste:hover{
+    box-shadow: 0px 0px 5px rgb(102, 153, 204);
+  }
+  .cardVerde:hover{
+    box-shadow: 0px 0px 5px green;
+  }
+
+  .cardRojo:hover{
+    box-shadow: 0px 0px 5px red;
+  }
+
+  .cardAmarillo:hover{
+    box-shadow: 0px 0px 5px yellow;
+  }
