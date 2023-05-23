@@ -103,21 +103,10 @@ body{
 
 
 #ImagenFede{
-    padding-left: 5px;
-    padding-top: 5px;
     width: 200px; 
     height: 200px;
-    border-radius: 51%;
-    overflow: hidden;
-}
-
-
-#divBorde{
-    width: 205px; 
-    height: 205px;
-    background-color: rgb(10, 129, 168);
-    border-radius: 50%;
-    overflow: hidden;
+    border-radius: 50%; 
+    border: 5px solid rgb(10, 129, 168);
 }
 
 
@@ -127,6 +116,8 @@ body{
     justify-content: center;
     align-items: center;
     text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 
