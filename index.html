@@ -96,7 +96,7 @@
             <div id="proyect">
                 <h3>Proyectos</h3>
                 <div id="divCards" class="d-flex flex-wrap justify-content-center aling-items-center mt-4">
-    
+
                 </div>
             </div>
 
@@ -106,7 +106,7 @@
 
 
 
-            
+
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -130,7 +130,7 @@
         </section>
 
 
-        <section id="Habilidades" >
+        <section id="Habilidades">
             <div id="divHabilidades">
                 <h3 id="titHabi">Habilidades</h3>
             </div>
@@ -249,24 +249,24 @@
                         <div class="card-body">
 
                             <div class="row">
-                                <div class="col-md-6 mb-3">
+                                <div class="col-md-6 mb-3" id="nombreContainer">
                                     <label for="nombre" class="form-label  labelscontact">Nombre</label>
                                     <input type="text" class="form-control" id="nombre" placeholder="">
                                 </div>
-                                <div class="col-md-6 mb-3">
+                                <div class="col-md-6 mb-3" id="emailContainer">
                                     <label for="asunto" class="form-label labelscontact">Email</label>
-                                    <input type="text" class="form-control" id="asunto" placeholder="">
+                                    <input type="text" class="form-control" id="email" placeholder="">
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label labelscontact">Asunto</label>
-                                <input type="email" class="form-control" id="email" placeholder="">
+                            <div class="mb-3" id="asuntoContainer">
+                                <label for="text" class="form-label labelscontact">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" placeholder="">
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3" id="comentarioContainer">
                                 <label for="comentario" class="form-label labelscontact">Comentario</label>
                                 <textarea class="form-control" id="comentario" rows="3"></textarea>
                             </div>
-                            <button type="button" class="btn btn-primary">Enviar</button>
+                            <button type="button" id="botonEnviar" class="btn btn-primary">Enviar</button>
 
                         </div>
                     </div>
@@ -276,7 +276,8 @@
                     <a href="https://www.linkedin.com/in/federico-tahan"><img class="imgContact"
                             src="/Imagenes/linkedin.png"></a>
                     <a href="https://github.com/Federico-Tahan"><img class="imgContact" src="/Imagenes/gith.png"></a>
-                    <a href="https://www.instagram.com/federico_tahan/"><img class="imgContact" src="/Imagenes/instagram.png"></a>
+                    <a href="https://www.instagram.com/federico_tahan/"><img class="imgContact"
+                            src="/Imagenes/instagram.png"></a>
 
                 </div>
         </section>
@@ -290,6 +291,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
     <script>
@@ -374,6 +376,54 @@
 
 
         }
+
+
+
+        $("#botonEnviar").on("click", function () {
+
+            $("#nombreContainer p").remove();
+            $("#emailContainer p").remove();
+            $("#asuntoContainer p").remove();
+            $("#comentarioContainer p").remove();
+            let ban = true;
+            if ($("#nombre").val().trim() == "") {
+                $("#nombreContainer").append("<p style='color: red; font-size:20px'>Debe ingresar un nombre</p>");
+                ban = false;
+            }
+            if ($("#email").val().trim() == "") {
+                $("#emailContainer").append("<p style='color: red; font-size:20px'>Debe ingresar un Email</p>");
+                ban = false;
+            }
+            if ($("#asunto").val().trim() == "") {
+                $("#asuntoContainer").append("<p style='color: red; font-size:20px'>Debe ingresar un Asunto</p>");
+                ban = false;
+            }
+            if ($("#comentario").val().trim() == "") {
+                $("#comentarioContainer").append("<p style='color: red; font-size:20px'>Debe ingresar un Comentario</p>");
+                ban = false;
+            }
+
+
+
+            if (ban) {
+
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Email Enviado con Exito',
+                    showConfirmButton: false,
+                    timer: 1500
+                }).then(function() {
+                    $("#nombre").val('')
+                    $("#email").val('')
+                    $("#asunto").val('')
+                    $("#comentario").val('')
+
+                });
+            }
+
+        });
+
     </script>
 </body>
 
