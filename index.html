@@ -650,7 +650,7 @@
             <div class="about-content">
                 <div class="about-image">
                     <div class="profile-img">
-                       <img src="https://media.licdn.com/dms/image/v2/D4D03AQFjYfQxBbvpyg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1685999363553?e=1754524800&v=beta&t=NF9Y2bvY3FJmPNGj_jmamORDU_oSVmw5KGevRhlxoIY">
+                        <img style="height: 239px; border-radius: 50%;" src="https://media.licdn.com/dms/image/v2/D4D03AQFjYfQxBbvpyg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1685999363552?e=1754524800&v=beta&t=GSzHL2OcCJEKxIIr7g8i-6jJl14HhiALXx6pnbNd99w">
                     </div>
                 </div>
                 <div class="about-text">
@@ -668,7 +668,7 @@
             <h2 class="section-title">Habilidades Técnicas</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend & .NET</h3>
+                    <h3><i class="fas fa-server"></i> Backend</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">.NET</span>
                         <span class="skill-tag">ADO.NET</span>
@@ -689,7 +689,6 @@
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">Responsive Design</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -698,8 +697,7 @@
                         <span class="skill-tag">SQL Server</span>
                         <span class="skill-tag">Redis DB Cache</span>
                         <span class="skill-tag">Diseño de BD Relacionales</span>
-                        <span class="skill-tag">Procedimientos Almacenados</span>
-                        <span class="skill-tag">Optimización de Consultas</span>
+                        <span class="skill-tag">Gestión de Datos</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -710,13 +708,14 @@
                         <span class="skill-tag">Singleton</span>
                         <span class="skill-tag">Mediator</span>
                         <span class="skill-tag">Microservicios</span>
-                        <span class="skill-tag">SCRUM</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3><i class="fas fa-cloud"></i> Servicios Externos</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Minio</span>
                         <span class="skill-tag">Stripe</span>
                         <span class="skill-tag">MercadoPago</span>
                         <span class="skill-tag">Amazon S3</span>
@@ -728,6 +727,7 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">JIRA</span>
+                        <span class="skill-tag">SCRUM</span>
                         <span class="skill-tag">Visual Studio</span>
                         <span class="skill-tag">SQL Server Management</span>
                     </div>
@@ -741,6 +741,37 @@
         <div class="container">
             <h2 class="section-title">Proyectos Destacados</h2>
             <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SupportMe - Plataforma de Crowdfunding</h3>
+                        <p class="project-description">Aplicación completa de crowdfunding que permite a usuarios crear campañas, recibir donaciones y gestionar proyectos. Incluye sistema de pagos, almacenamiento de archivos y gestión de usuarios en tiempo real.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Minio</span>
+                        </div>
+                        <div class="project-features" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                            <p><strong>Características:</strong></p>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>• Creación y gestión de campañas</li>
+                                <li>• Sistema de donaciones integrado</li>
+                                <li>• Almacenamiento seguro en la nube</li>
+                                <li>• Notificaciones en tiempo real</li>
+                                <li>• Panel de administración completo</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="#"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-card">
                     <div class="project-image">
                         <i class="fas fa-pizza-slice"></i>
@@ -770,56 +801,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-wallet"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Wellet Corp - Sistemas Backend</h3>
-                        <p class="project-description">Desarrollo y mantenimiento de sistemas backend corporativos con integración de servicios externos, implementación de APIs RESTful y gestión de bases de datos complejas.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">.NET</span>
-                            <span class="tech-tag">SQL Server</span>
-                            <span class="tech-tag">Web API</span>
-                            <span class="tech-tag">Entity Framework</span>
-                            <span class="tech-tag">Redis</span>
-                        </div>
-                        <div class="project-features" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                            <p><strong>Responsabilidades:</strong></p>
-                            <ul style="list-style: none; padding-left: 0;">
-                                <li>• Liderazgo de equipo técnico</li>
-                                <li>• Implementación de seguridad robusta</li>
-                                <li>• Integración con servicios externos</li>
-                                <li>• Optimización de rendimiento</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Arquitecturas Modernas</h3>
-                        <p class="project-description">Implementación de patrones de diseño avanzados y arquitecturas modernas como CQRS, microservicios y integración con servicios cloud para aplicaciones escalables.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">CQRS</span>
-                            <span class="tech-tag">Microservicios</span>
-                            <span class="tech-tag">Design Patterns</span>
-                            <span class="tech-tag">Cloud Integration</span>
-                            <span class="tech-tag">API Gateway</span>
-                        </div>
-                        <div class="project-features" style="margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                            <p><strong>Tecnologías implementadas:</strong></p>
-                            <ul style="list-style: none; padding-left: 0;">
-                                <li>• Patrón CQRS</li>
-                                <li>• Factory & Singleton</li>
-                                <li>• Mediator Pattern</li>
-                                <li>• Servicios distribuidos</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -846,6 +827,20 @@
                             <li>Gestión de versiones y control de código con Git</li>
                             <li>Participación en planificación y estimación de proyectos</li>
                             <li>Toma de decisiones estratégicas y resolución de problemas técnicos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3 class="timeline-title">Desarrollador Freelance</h3>
+                        <div class="timeline-description">
+                            <p>Desarrollo de proyectos independientes especializándome en aplicaciones fullstack con .NET, Angular y arquitecturas modernas.</p>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Desarrollo del proyecto Formaggio - Sistema completo para gestión de pizzería</li>
+                            <li>Desarrollo del proyecto CodeFlow Sell - Sistema de gestión de ventas y stock desarrollado en C# con Windows Forms y SQL Server, que incluye control de productos, ventas, usuarios, clientes, reportes detallados y seguridad, con impresión de tickets y alertas de stock, todo en una interfaz 100% responsiva. </li>
+
                         </ul>
                     </div>
                 </div>
@@ -885,28 +880,15 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Córdoba, Argentina</span>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <span>Inglés (B2)</span>
-                    </div>
                 </div>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/federico-tahan/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:fedetahan8@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="tel:+543575417784"><i class="fas fa-phone"></i></a>
+                    <a href="https://github.com/Federico-Tahan"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Federico Tahan. Todos los derechos reservados.</p>
-            <p style="margin-top: 0.5rem; opacity: 0.7;">Desarrollador Fullstack especializado en .NET y Angular</p>
-        </div>
-    </footer>
 
     <script>
         // Smooth scrolling for navigation links
